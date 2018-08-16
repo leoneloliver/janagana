@@ -1,0 +1,29 @@
+[
+   {  
+      "name":"Music",
+      "content":"Find your favourite songs",
+      "img":"img/ico-music.jpg",
+      "link":""
+   },
+   {  
+      "name":"Events",
+      "content":"The best events ever",
+      "img":"img/ico-events.jpg",
+      "link":""
+   },
+   {  
+      "name":"Music Classes",
+      "content":"Take music classes",
+      "img":"img/ico-classes.jpg",
+      "link":""
+   },
+   {  
+      "name":"Videos",
+      "content":"Find your favourite videos",
+      "img":"img/ico-videos.jpg",
+      "link":""
+   }
+
+   
+   
+]

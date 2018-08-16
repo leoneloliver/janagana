@@ -1,0 +1,282 @@
+<ion-view view-title="" class="profile favourite artists">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        
+
+        <div class="tabs tabs-dark  static icon-tabs">
+            
+           
+            My Profile Details
+        </div>
+
+
+        <div class="list animate-fade-slide-in-right grey-bg list-artists">
+
+           <div class="list card">
+
+                <div class="item item-avatar">
+                  <img src="img/avatar.jpg">
+                  <h2 class="title-event">Daphne Montiel</h2>
+                  <p>Thursday, 22 October 2015</p>
+                </div>
+
+                <div class="item item-body">
+                  <!-- <img class="full-image" src="img/eventdetail.jpg"> -->
+                  <p>
+                    I'm 16 and interested in pursuing music as a career, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                  </p>
+                  <p>
+                    <div class="list">
+
+                   <!--  <a class="item item-icon-left" href="#">
+                      <i class="icon ion-email"></i>
+                      Check mail
+                    </a> -->
+
+                    <!-- <a class="item item-icon-left item-icon-right" href="#">
+                      <i class="icon ion-chatbubble-working"></i>
+                      (876) 8766 5555
+                      <i class="icon ion-ios-telephone-outline"></i>
+                    </a> -->
+
+                    <a class="item item-icon-left" href="#">
+                      <i class="icon ion-mic-a"></i>
+                      Favourite Album
+                      <span class="item-note">
+                        The Legend
+                      </span>
+                    </a>
+                    <a class="item item-icon-left" href="#">
+                      <i class="icon ion-android-star"></i>
+                      Favourite Music Genre
+                      <span class="item-note">
+                        Indian Music
+                      </span>
+                    </a>
+
+                    <a class="item item-icon-left" href="#/app/friends">
+                      <i class="icon ion-person-stalker"></i>
+                      Following
+                      <span class="badge badge-assertive">12</span>
+                    </a>
+
+                  </div>
+                  </p>
+                  <p>
+                    <ul class="list">
+
+                      <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox" checked>
+                         </label>
+                         Music
+                      </li>
+                      <li class="item item-checkbox">
+                         <label class="checkbox">
+                           <input type="checkbox">
+                         </label>
+                         Art
+                      </li>
+                      <li class="item item-checkbox">
+                         <label class="checkbox" >
+                           <input type="checkbox" checked>
+                         </label>
+                         Classes
+                      </li>
+
+               
+
+                    </ul>
+                  </p>  
+                  
+                  <p>
+                    <a href="#" class="subdued">1500 Follows</a>
+                    <a href="#" class="subdued">5 Comments</a>
+                  </p>
+                </div>
+
+                
+
+          </div>
+          <div class="list item btn-plus">
+             <button class="button  btn-n" ui-sref="app.profile"><i class="ion-ios-loop-strong"></i>&nbsp;
+              Edit Profile
+          </button>
+          <div class="space-footer"></div>
+
+          </div>
+         
+
+            
+              
+        </div>
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite song</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Album
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Song
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.artists">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-video.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite videos</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Category
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Title
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.videolist">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+    </ion-content>
+
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.profile"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profiledetails"><i class="ion-person"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.playlist"><i class="ion-ios-musical-notes"></i></a>
+              </div>
+        </div>
+    </div>
+</ion-view>

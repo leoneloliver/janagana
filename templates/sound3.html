@@ -1,0 +1,258 @@
+<ion-view view-title="" class="profile sounds">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/sound-bg.jpg');">
+            <div class="content">
+                <div id="avatar" class="avatar shadow" style="background-image: url('img/album1.jpg');"></div>
+                <h3><a class="light">Bappaditya Gole</a></h3>
+                <h4>Soung 1&nbsp;&nbsp;<i class="ion-volume-high"></i></h4>
+            </div>
+        </div>
+        <div class="tabs tabs-dark static bg-special-red">
+            <a ui-sref="app.artists" class="tab-item">
+                <i class="icon ion-arrow-return-left small"></i> 
+            </a>
+            <a ui-sref="app.artists" class="tab-item">
+                <i class="icon ion-skip-backward medium"></i> 
+            </a>
+            <a ui-sref="app.artists" class="tab-item">
+                <i class="icon ion-play"></i> 
+            </a>
+            <a ui-sref="app.artists" class="tab-item">
+                <i class="icon ion-skip-forward medium"></i> 
+            </a>
+            <a ui-sref="app.artists" class="tab-item">
+                <i class="icon ion-shuffle small"></i>
+            </a>
+        </div>
+        <!-- <h4 class="content padding double-padding-x">Following</h4>
+
+ -->
+        <div class="hide">
+             <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/119943297&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </div>
+        <div class="list animate-fade-slide-in-right dark-dark-grey-bg">
+            <a ui-sref="app.sounds" class="item item-icon-right ">
+                <h2>Amjad Ali Khan - Bappaditya Gole</h2>
+                <i class="icon ion-play muted">3:34</i>
+            </a>
+            <a ui-sref="app.sound2" class="item item-icon-right">
+                <h2>Sound2 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">2:06</i>
+            </a>
+            <a ui-sref="app.soundpause" class="item item-icon-right active">
+                <h2>Sound3 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-pause muted">1:54</i>
+            </a>
+            <a  class="item item-icon-right">
+                <h2>Sound4 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">5:21</i>
+            </a>
+            <a class="item item-icon-right">
+                <h2>Sound5 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">1:54</i>
+            </a>
+            <a class="item item-icon-right">
+                <h2>Sound6 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">3:45</i>
+            </a>
+            <a  class="item item-icon-right">
+                <h2>Sound7 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">4:56</i>
+            </a>
+            <a class="item item-icon-right">
+                <h2>Sound8 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">3:20</i>
+            </a>
+            <a class="item item-icon-right">
+                <h2>Sound9 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">3:34</i>
+            </a>
+            <a class="item item-icon-right">
+                <h2>Sound10 - Album: Bappaditya Gole</h2>
+                <i class="icon ion-play muted">3:34</i>
+            </a>
+            <!-- <a class="item">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/119944123&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            </a>
+ -->
+
+
+
+                <div class="list item btn-plus">
+                     <button class="button  btn-n more-music" ui-sref="app.artists"><i class="ion-ios-loop-strong"></i>&nbsp;
+                        Artists List
+                    </button>
+                    <div class="space-footer"></div>
+                </div>
+        </div>
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite song</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Album
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Song
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.artists">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-video.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite videos</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Category
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Title
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.videolist">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+
+    </ion-content>
+   <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.profile"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profiledetails"><i class="ion-person"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.playlist"><i class="ion-ios-musical-notes"></i></a>
+              </div>
+        </div>
+    </div>
+</ion-view>

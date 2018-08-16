@@ -1,0 +1,212 @@
+<ion-view view-title="" class="profile favourite artists">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+    <div class="tabs tabs-dark  static icon-tabs">
+            
+           
+            Following
+        </div>
+
+
+        <div class="content has-header">
+            <div class="list animate-fade-slide-in-right">
+                <a href="#/app/profile" class="item item-avatar item-icon-right">
+                    <img src="img/f1.jpg">
+                    <h2>kohinoor akter </h2>
+                    <p>living the life</p>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+                <a href="#/app/profile" class="item item-avatar item-icon-right">
+                    <img src="img/f2.jpg">
+                    <h2>Farooq farooq </h2>
+                    <p>music is the best feeling</p>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+                <a href="#/app/profile" class="item item-avatar item-icon-right">
+                    <img src="img/f3.jpg">
+                    <h2>Abrar Toor </h2>
+                    <p>i love the fear of the life</p>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+                <a href="#/app/profile" class="item item-avatar item-icon-right">
+                    <img src="img/f4.jpg">
+                    <h2>Anousha Kegalla</h2>
+                    <p>one day i will be a musician</p>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+                <a href="#/app/profile" class="item item-avatar item-icon-right">
+                    <img src="img/f5.jpg">
+                    <h2>Aabid Khan </h2>
+                    <p>music is the art of god</p>
+                    <i class="icon ion-chatbubble muted"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite song</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Album
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Song
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.artists">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-video.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite videos</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Category
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Title
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.videolist">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+    </ion-content>
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.profile"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profiledetails"><i class="ion-person"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.playlist"><i class="ion-ios-musical-notes"></i></a>
+              </div>
+        </div>
+    </div>
+</ion-view>

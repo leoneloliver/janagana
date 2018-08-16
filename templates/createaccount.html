@@ -1,0 +1,222 @@
+<ion-view view-title="" class="profile favourite artists create">
+   
+    <ion-content style="background: url(img/bg.jpg) center; background-size: cover;">
+        
+
+        <div class="tabs tabs-dark  static icon-tabs">
+            
+           
+            Create Account
+        </div>
+
+
+        <div class="list animate-fade-slide-in-right grey-account list-artists">
+
+            <div class="list">
+              <label class="item item-input item-floating-label">
+                <span class="input-label">First Name</span>
+                <input type="text" placeholder="First Name" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Last Name</span>
+                <input type="text" placeholder="Last Name" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Email</span>
+                <input type="text" placeholder="Email" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Country</span>
+                <input type="text" placeholder="Country" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >Province</span>
+                <input type="text" placeholder="Province" class="txt-w">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label" >City</span>
+                <input type="text" placeholder="City" class="txt-w">
+              </label>
+               <div class="item"> 
+                 <div class="list item">
+                    <span class="input-label" >Gender</span>
+                      <label class="item item-radio">
+                        <input type="radio" name="group" checked>
+                        <div class="item-content">
+                          Male
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                      </label>
+                      <label class="item item-radio">
+                        <input type="radio" name="group">
+                        <div class="item-content">
+                          Female
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                      </label>
+
+               </div>
+               <label class="item item-input item-floating-label">
+                <span class="input-label" >New password</span>
+                <input type="text" placeholder="New password" class="txt-w">
+              </label>
+
+               </div>
+              <div class="item">
+                <button class="button button-block button-red " ng-controller='ModalAccountCtrl' ng-click="openModal()">Create account</button>
+              </div>
+              
+            </div>
+         
+            
+        </div>
+        <div class="space-footer"></div>
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite song</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Album
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Song
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.artists">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-account.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Your account has been created successfully! </h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                    <p></p>
+                    <p>Welcome to Jana Gana</p>
+                
+              </div>
+              <div class="item">
+
+                  <div class="row footer-ico">
+                    <div class="col center">
+                        <a class="white" ui-sref="app.profile"><img src="img/a1.jpg" class="tmb"></a>
+                    </div>
+                    <div class="col center">
+                        <a class="white" ui-sref="app.profile"><img src="img/a2.jpg" class="tmb"></a>
+                    </div>
+                    <div class="col center">
+                        <a class="white" ui-sref="app.profile"><img src="img/a3.jpg" class="tmb"></a>
+                    </div>
+                    <div class="col center">
+                        <a class="white" ui-sref="app.profile"><img src="img/a4.jpg" class="tmb"></a>
+                    </div>
+                    
+                  </div>
+
+               <div class="list top-list">
+
+              
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.profile">
+                      Get Started
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+    </ion-content>
+
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.profile"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profiledetails"><i class="ion-person"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.playlist"><i class="ion-ios-musical-notes"></i></a>
+              </div>
+        </div>
+    </div>
+</ion-view>

@@ -1,0 +1,60 @@
+[
+   {  
+      "name":"Amjad Ali Khan",
+      "album":"Artist short bio here ",
+      "img":"img/avatar-musician.jpg",
+      "heart":"1210",
+      "follow":"1230",
+      "qtdalbum":"23",
+      "linkto":"#/app/favourite"
+   },
+   {  
+      "name":"Ravi Sankar",
+      "album":"Artist short bio here ",
+      "img":"img/artist1.jpg",
+      "heart":"1320",
+      "follow":"1572",
+      "qtdalbum":"11",
+      "linkto":"#/app/favourite"
+   },
+   {  
+      "name":"Lata Mangeshkar",
+      "album":"Artist short bio here ",
+      "img":"img/artist2.jpg",
+      "heart":"1114",
+      "follow":"1430",
+      "qtdalbum":"5",
+      "linkto":"#/app/favourite"
+   },
+   {  
+      "name":"Sonu Nigam",
+      "album":"Artist short bio here ",
+      "img":"img/artist3.jpg",
+      "heart":"983",
+      "follow":"2231",
+      "qtdalbum":"11",
+      "linkto":"#/app/favourite"
+   },
+   {  
+      "name":"Shreya Ghoshal",
+      "album":"Artist short bio here ",
+      "img":"img/artist4.jpg",
+      "heart":"1404",
+      "follow":"1257",
+      "qtdalbum":"16",
+      "linkto":"#/app/favourite"
+   },
+   {  
+      "name":"Kishore Kumar",
+      "album":"Artist short bio here ",
+      "img":"img/artist5.jpg",
+      "heart":"1419",
+      "follow":"1267",
+      "qtdalbum":"13",
+      "linkto":"#/app/album2"
+   }
+
+
+   
+   
+]

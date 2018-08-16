@@ -1,0 +1,283 @@
+<ion-view view-title="" class="profile favourite artists">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <!-- <div class="hero slide-up" style="background-image: url('img/bg-favourite2.jpg');">
+            <div class="content">
+                <div class="avatar shadow left" style="background-image: url('img/avatar-musician.jpg');"></div>
+                <h3 class="left"><a class="light">Amjad Ali Khan</a></h3>
+                <div class="buy">
+                    <div class="space"></div>
+                    <div class="n-btn">
+                          <div class="center btn-b first-btn">
+                             <a class="white">200<p>Songs</p></a>
+                          </div>
+                          <div class="center btn-b">
+                            <button class="button button-small">Buy Soung</button><br>
+                             <a class="white">15 Albums </a>
+                          </div>
+                          <div class="center btn-b">
+                            <button class="button button-small">Buy Album</button><br>
+                             <a class="white">1200 Following</a>
+                          </div>
+                         
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="tabs tabs-dark tabs-icon-top static">
+            <a ui-sref="app.favourite" class="tab-item">
+                <i class="icon ion-heart"></i> Favourites
+            </a>
+            <a ui-sref="app.friends" class="tab-item">
+                <i class="icon ion-android-people"></i> Friends
+            </a>
+            <a ui-sref="app.gallery" class="tab-item">
+                <i class="icon ion-ios-calendar"></i> Events
+            </a>
+        </div> -->
+        <!-- <h4 class="content padding double-padding-x">Following</h4>
+-->     <!-- <div class="preview">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/119944123&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </div> -->
+
+        <div class="tabs tabs-dark  static icon-tabs">
+            
+            <!-- <a  class="tab-item">
+                <i class="ion-thumbsup" ng-class="{'icon lightining': liked, 'icon ': !liked}" ng-click="liked=!liked"></i>
+            </a>
+            <a class="tab-item">
+                <i class="ion-heart" ng-class="{'icon lightining': hearted, 'icon ': !hearted}" ng-click="hearted=!hearted"></i>
+            </a>
+            <a class="tab-item">
+                <i class="ion-android-share-alt" ng-class="{'icon lightining': shared, 'icon ': !shared}" ng-click="shared=!shared"></i>
+
+            </a> -->
+            Music Classes Detail
+        </div>
+
+
+        <div class="list animate-fade-slide-in-right grey-bg list-artists">
+
+           <div class="list card">
+
+                <div class="item item-avatar">
+                  <img src="img/classlogo4.jpg">
+                  <h2 class="title-event">Avarthak India</h2>
+                  <p>Arts and Music</p>
+                </div>
+
+                <div class="item item-body">
+                  <img class="full-image" src="img/classdetail.jpg">
+                  <p>
+                    The College has been proudly offering online classes since 2009. We currently offer eight classes per session. Students who have studied at the College in the past can enjoy the rich musical experience they have become familiar with, and new students from around the world can access Indian music classes which were formerly unavailable to them.
+                  </p>
+                  <p>
+                    The classes can be taken from anywhere in the world! Our online students are currently located in: New Jersey, Philadelphia, Utah, London, New York City, Toronto, Portland, Colorado, Tokyo, Kolkata, Mumbai, and various parts of California.
+                  </p>
+                  <p class="title-event"><i class="ion-location"></i>&nbsp;Gulshan Avenue, Level 5, Dhaka 1212, Bangladesh India</p>
+                  <p>
+                    <a href="#" class="subdued">15 Like</a>
+                    <a href="#" class="subdued">5 Comments</a>
+                  </p>
+                </div>
+
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                  <a class="tab-item">
+                    <i class="icon ion-thumbsup title-event"></i>
+                    Like
+                  </a>
+                  <a class="tab-item">
+                    <i class="icon ion-chatbox title-event"></i>
+                    Comment
+                  </a>
+                  <a class="tab-item">
+                    <i class="icon ion-share title-event"></i>
+                    Share
+                  </a>
+                </div>
+
+          </div>
+          <div class="list item btn-plus">
+             <button class="button  btn-n" ui-sref="app.classlist"><i class="ion-ios-loop-strong"></i>&nbsp;
+                Music Classes list
+            </button>
+            <div class="space-footer"></div>
+          </div>
+         
+
+          
+            
+            
+              
+        </div>
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-search.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite song</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Album
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Song
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.artists">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+        <!-- modal template -->
+        <!-- modal template -->
+        <!-- modal template -->
+        <script id="modal-video.html" type="text/ng-template">
+          <div class="modal">
+            <ion-header-bar>
+              <h4 class="title">Find your favourite videos</h4>
+            </ion-header-bar>
+            <ion-content>
+              <div class="list center">
+                
+              </div>
+              <div class="item">
+
+               <div class="list top-list">
+
+                  <label class="item item-radio">
+                    <input type="radio" name="group" checked="checked">
+                    <div class="item-content">
+                      Artist
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Category
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Title
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+                  <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                      Genre
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                  </label>
+
+           
+
+                </div>
+
+                <div class="list">
+                  <label class="item item-input btn-s">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" placeholder="Search">
+                  </label>
+
+                </div>
+
+                <div class="list">
+
+
+                    <button class="button button-full btn-n" ui-sref="app.videolist">
+                      Search
+                    </button>
+
+                </div>
+            
+
+              </div>
+            </ion-content>
+          </div>
+        </script>
+        <!-- modal template -->
+        <!-- modal template -->
+
+
+    </ion-content>
+
+    <div class="bar bar-footer bar bar-dark"> 
+       <!-- <div class="title footer-logo"><img src="img/footer-img.jpg" class="img-f"></div> -->
+        <div class="row footer-ico">
+              <div class="col center">
+                  <a class="white" ui-sref="app.profile"><i class="ion-ios-home"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ng-controller='ModalSearchCtrl' ng-click="openModal()"><i class="ion-android-search"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.profiledetails"><i class="ion-person"></i></a>
+              </div>
+              <div class="col center">
+                 <a class="white" ui-sref="app.playlist"><i class="ion-ios-musical-notes"></i></a>
+              </div>
+        </div>
+    </div>
+</ion-view>
