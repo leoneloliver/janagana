@@ -144,7 +144,8 @@ angular.module('starter.controllers', [])
     return $sce.trustAsHtml(html_code);
   }
 
-  $http.get("/janagana/json/profile.json")
+  // $http.get("/janagana/json/profile.json")
+  $http.get("/json/profile.json")
   .success(function (response) 
   {
     $scope.profiles = response;
@@ -182,7 +183,8 @@ angular.module('starter.controllers', [])
 
 .controller('FavouriteCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
     
-    $http.get("/janagana/json/favourite.json")
+    // $http.get("/janagana/json/favourite.json")
+    $http.get("/json/profile.json")
       .success(function (response) 
       {
         $scope.favourites = response;
@@ -218,7 +220,8 @@ angular.module('starter.controllers', [])
 
 .controller('VideolistCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
     
-    $http.get("/janagana/json/videolist.json")
+    // $http.get("/janagana/json/videolist.json")
+    $http.get("/json/profile.json")
       .success(function (response) 
       {
         $scope.favourites = response;
@@ -254,7 +257,8 @@ angular.module('starter.controllers', [])
 
 .controller('Album2Ctrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
     
-    $http.get("/janagana/json/album2.json")
+    // $http.get("/janagana/json/album2.json")
+    $http.get("/json/profile.json")
       .success(function (response) 
       {
         $scope.favourites = response;
@@ -332,7 +336,8 @@ angular.module('starter.controllers', [])
 
 .controller('ArtistsCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
 
-  $http.get("/janagana/json/artist.json")
+  // $http.get("/janagana/json/artist.json")
+  $http.get("/json/profile.json")
   .success(function (response) 
   {
     $scope.artists = response;
@@ -368,7 +373,8 @@ angular.module('starter.controllers', [])
 
 .controller('EventsCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
 
-  $http.get("/janagana/json/events.json")
+  // $http.get("/janagana/json/events.json")
+  $http.get("/json/profile.json")
   .success(function (response) 
   {
     $scope.events = response;
@@ -458,7 +464,8 @@ angular.module('starter.controllers', [])
 
 .controller('ClasslistCtrl', function($scope, $http, $stateParams, $timeout, ionicMaterialMotion, ionicMaterialInk) {
 
-  $http.get("/janagana/json/classes.json")
+  // $http.get("/janagana/json/classes.json")
+  $http.get("/json/profile.json")
   .success(function (response) 
   {
     $scope.classess = response;
